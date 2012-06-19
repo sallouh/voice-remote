@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent" android:layout_height="match_parent">
+  
+	<RelativeLayout android:id="@+id/layoutSettings"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_above="@+id/button2"
+	android:layout_width="match_parent" android:layout_height="wrap_content">
+
+	    <CheckBox android:id="@+id/cbNotify" android:text="Show Notification Icon" android:onClick="onOptionChanged"
+	    android:layout_height="wrap_content" android:layout_width="wrap_content"
+	    android:layout_alignParentLeft="true" />
+	    
+	    <CheckBox android:id="@+id/cbAuto" android:text="Start service automatically"  android:onClick="onOptionChanged"
+	    android:layout_height="wrap_content" android:layout_width="wrap_content"
+	    android:layout_alignParentLeft="true" android:layout_below="@+id/cbNotify" />
+	    
+	    <Button android:text="Done" android:onClick="Apply" android:id="@+id/bnApply" 
+	    android:layout_width="100px" android:layout_height="wrap_content"    
+	    android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
+	    />
+	    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	    android:layout_below="@+id/cbAuto" android:onClick="onOptionChanged"
+	    android:layout_alignParentLeft="true" android:text="Start recognizer from Media Button" android:id="@+id/cbUseMediaButton"></CheckBox>
+	    
+	    <CheckBox android:id="@+id/cbUseHeadset" 
+	    android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	    android:text="Use headset if plugged in.  Otherwise, use the phone speaker and microphone." android:layout_below="@+id/cbUseMediaButton" android:layout_alignParentLeft="true"></CheckBox>
+	    <Spinner android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/spinner1" android:layout_below="@+id/cbUseHeadset" android:layout_toRightOf="@+id/textView1"></Spinner>
+	    <TextView android:layout_height="wrap_content" android:text="TextView" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_alignTop="@+id/spinner1" android:layout_alignParentLeft="true" android:layout_marginTop="16dp"></TextView>
+	    <SeekBar android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/seekBar1" android:layout_below="@+id/spinner1" android:max="10"></SeekBar>
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

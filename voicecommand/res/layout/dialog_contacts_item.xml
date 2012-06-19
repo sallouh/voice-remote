@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    
+    <ImageView android:id="@+id/imageContact" android:layout_width="32dip"  android:layout_height="32dip"/>
+    <TextView android:id="@+id/textContact" android:layout_width="fill_parent" android:layout_height="32dip" 
+    	android:text="Temp" android:textColor="#fff"
+    	android:layout_toRightOf="@+id/imageContact" android:gravity="center_vertical" android:textSize="26px" android:inputType="textPersonName"/>
+</RelativeLayout>

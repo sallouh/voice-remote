@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="10px" 
+  >
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/layoutAppButtons"  android:layout_width="wrap_content"  android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"	>
+	  	
+	     
+	    <ImageButton android:src="@drawable/leftarrow" android:id="@+id/button1" android:onClick="onPrevious"
+		     android:layout_width="64dip" android:layout_height="32dip"
+		     android:background="@drawable/button" android:textColor="#fff"
+		     android:layout_toRightOf="@+id/bnHistory"/>
+	     <ImageButton android:src="@drawable/rightarrow" android:id="@+id/button2" android:onClick="onNext"
+		     android:layout_width="64dip" android:layout_height="32dip"
+		     android:background="@drawable/button" android:textColor="#fff"
+		     android:layout_toRightOf="@+id/button1"/>
+		     
+		     <TextView android:id="@+id/textPageNum" 
+    android:textAppearance="?android:attr/textAppearanceLarge"
+     android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="1 of 10" 
+     android:layout_alignParentRight="true"/>
+     </RelativeLayout>
+     
+     
+    <ListView android:layout_height="fill_parent" android:layout_width="fill_parent" 
+    android:id="@+id/gridView" android:layout_below="@+id/layoutAppButtons" android:layout_marginTop="10px"
+    />
+    <!-- <TextView android:text="1" android:textAppearance="?android:attr/textAppearanceLarge" 
+    android:layout_width="wrap_content" android:id="@+id/textPage" android:layout_height="wrap_content" 
+    android:layout_alignTop="@+id/button2" android:layout_alignRight="@+id/gridView"/> -->
+    
+    
+</RelativeLayout>

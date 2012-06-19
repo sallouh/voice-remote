@@ -1,0 +1,1 @@
+Auto Speakerphone will automatically enable the speakerphone on all incoming and outgoing calls.  By default, the speakerphone will not be turned on if a hands free bluetooth device or headphones are detected.

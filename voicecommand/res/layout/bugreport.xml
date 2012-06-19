@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    android:id="@+id/editTextBugTitle" android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+        <requestFocus></requestFocus>
+    </EditText>
+    <Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" 
+    	android:id="@+id/spinBugCommand" android:layout_below="@+id/editTextBugTitle" android:layout_alignParentLeft="true"/>
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	    android:id="@+id/editTextBugDesc" android:layout_below="@+id/spinBugCommand" 
+	    android:layout_alignParentLeft="true" android:lines="4"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    android:id="@+id/button1" android:text="Send Bug Report" android:layout_below="@+id/editTextBugDesc" 
+    android:onClick="sendBug"
+    android:layout_centerHorizontal="true"/>
+    
+    
+</RelativeLayout>

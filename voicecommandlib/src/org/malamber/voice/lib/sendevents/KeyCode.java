@@ -1,0 +1,106 @@
+package org.malamber.voice.lib.sendevents;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.malamber.common.shell.ShellExecutor;
+
+//import com.google.android.testing.nativedriver.common.AndroidKeys;
+public class KeyCode {
+	public static int UNKNOWN = 0;
+	public static int KEY_MENU = 1;
+	public static int SOFT_RIGHT = 2;
+	public static int HOME = 3;
+	public static int BACK = 4;
+	public static int CALL = 5;
+	public static int ENDCALL = 6;
+	public static int KEY_0 = 7;
+	public static int KEY_1 = 8;
+	public static int KEY_2 = 9;
+	public static int KEY_3 = 10;
+	public static int KEY_4 = 11;
+	public static int KEY_5 = 12;
+	public static int KEY_6 = 13;
+	public static int KEY_7 = 14;
+	public static int KEY_8 = 15;
+	public static int KEY_9 = 16;
+	public static int STAR = 17;
+	public static int POUND = 18;
+	public static int DPAD_UP = 19;
+	public static int DPAD_DOWN = 20;
+	public static int DPAD_LEFT = 21;
+	public static int DPAD_RIGHT = 22;
+	public static int DPAD_CENTER = 23;
+	public static int VOLUME_UP = 24;
+	public static int VOLUME_DOWN = 25;
+	public static int POWER = 26;
+	public static int CAMERA = 27;
+	public static int CLEAR = 28;
+	public static int A = 29;
+	public static int B = 30;
+	public static int C = 31;
+	public static int D = 32;
+	public static int E = 33;
+	public static int F = 34;
+	public static int G = 35;
+	public static int H = 36;
+	public static int I = 37;
+	public static int J = 38;
+	public static int K = 39;
+	public static int L = 40;
+	public static int M = 41;
+	public static int N = 42;
+	public static int O = 43;
+	public static int P = 44;
+	public static int Q = 45;
+	public static int R = 46;
+	public static int S = 47;
+	public static int T = 48;
+	public static int U = 49;
+	public static int V = 50;
+	public static int W = 51;
+	public static int X = 52;
+	public static int Y = 53;
+	public static int Z = 54;
+	public static int COMMA = 55;
+	public static int PERIOD = 56;
+	public static int ALT_LEFT = 57;
+	public static int ALT_RIGHT = 58;
+	public static int SHIFT_LEFT = 59;
+	public static int SHIFT_RIGHT = 60;
+	public static int TAB = 61;
+	public static int SPACE = 62;
+	public static int SYM = 63;
+	public static int EXPLORER = 64;
+	public static int ENVELOPE = 65;
+	public static int ENTER = 66;
+	public static int DEL = 67;
+	public static int GRAVE = 68;
+	public static int MINUS = 69;
+	public static int EQUALS = 70;
+	public static int LEFT_BRACKET = 71;
+	public static int RIGHT_BRACKET = 72;
+	public static int BACKSLASH = 73;
+	public static int SEMICOLON = 74;
+	public static int APOSTROPHE = 75;
+	public static int SLASH = 76;
+	public static int AT = 77;
+	public static int NUM = 78;
+	public static int HEADSETHOOK = 79;
+	public static int FOCUS = 80;
+	public static int PLUS = 81;
+	public static int MENU = 82;
+	public static int NOTIFICATION = 83;
+	public static int SEARCH = 84;
+	public static int TAG_LAST_KEYCODE = 85;;
+
+	private static String cmd = "/system/bin/input";
+	
+	public static void SendKeycode(int key) {
+		//L.d(null, "SendKeycode (" + key + ")");
+		List<String> args = new ArrayList<String>();
+		args.add("keyevent");
+		args.add("" + key);
+		ShellExecutor.Run(cmd, args);
+	}
+}

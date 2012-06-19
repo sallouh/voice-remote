@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"  android:layout_height="fill_parent" 
+  android:padding="10px" >
+  
+    <!-- android:layout_width="230px"  android:layout_height="220px"  -->
+     <Button android:layout_height="250px" android:layout_width="250px" 
+    android:id="@+id/bnTest" android:text="Test" android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:onClick="onTest"/>
+     
+    <Button android:id="@+id/bnSpeak" android:layout_height="wrap_content" android:layout_width="250px" 
+	    android:text="Speak" android:layout_centerHorizontal="true" 
+	    android:onClick="onSpeak" android:layout_below="@+id/bnTest"   />	
+	
+	
+		
+	<ScrollView android:id="@+id/scroll"  android:layout_height="200px" android:layout_width="fill_parent"
+		android:layout_below="@+id/bnSpeak" android:fadingEdge="vertical" android:fillViewport="true" 
+		android:isScrollContainer="true">
+		
+		<TextView android:id="@+id/tvResults" android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:textColor="#ff0" android:text="Test"  android:gravity="center_horizontal" />
+			
+	</ScrollView>
+	
+	<ProgressBar android:id="@+id/pbResults" android:layout_height="64px" android:layout_width="64px"
+		style="?android:attr/progressBarStyleLarge"
+		 android:layout_centerHorizontal="true" android:layout_below="@+id/scroll"  /> 
+    <RelativeLayout android:id="@+id/layoutService" android:layout_width="match_parent"  android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:gravity="center_horizontal">   
+    	 
+    	    <Button android:id="@+id/bnService" android:layout_height="wrap_content" android:layout_width="100px" 
+			    android:onClick="onService" android:text="Stop" />
+			    
+			
+    
+    </RelativeLayout>
+    
+   
+</RelativeLayout>
