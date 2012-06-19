@@ -1,6 +1,0 @@
-Detect keyboard
-
-preferences:
-	General
-		Autostart
-		Beep on error

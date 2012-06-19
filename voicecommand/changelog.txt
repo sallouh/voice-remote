@@ -1,2 +1,0 @@
-Fixed ignoring audio devices
-Removed an uneeded library to make the app smaller
