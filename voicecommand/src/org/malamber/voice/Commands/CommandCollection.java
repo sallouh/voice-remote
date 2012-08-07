@@ -1,11 +1,11 @@
-package org.malamber.voice.Commands;
+package org.malamber.voice.commands;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 import org.malamber.logging.L;
-import org.malamber.voice.Commands.Applications.OpenCommand;
-import org.malamber.voice.Commands.Touch.TouchCommand;
+import org.malamber.voice.commands.Applications.OpenCommand;
+import org.malamber.voice.commands.Touch.TouchCommand;
 
 import android.content.Context;
 

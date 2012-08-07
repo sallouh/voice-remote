@@ -1,4 +1,4 @@
-package org.malamber.voice.Commands.Applications;
+package org.malamber.voice.commands.Applications;
 
 public class HistoryTab {
 

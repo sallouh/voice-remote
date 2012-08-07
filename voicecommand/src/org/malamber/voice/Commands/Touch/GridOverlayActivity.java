@@ -1,4 +1,4 @@
-package org.malamber.voice.Commands.Touch;
+package org.malamber.voice.commands.Touch;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -6,9 +6,9 @@ import java.util.TimerTask;
 import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
-import org.malamber.voice.SendEvents.TouchEvent;
 import org.malamber.voice.activities.BaseVoiceActivity;
 import org.malamber.voice.commands.VoicePatternRunnable;
+import org.malamber.voice.events.TouchEvent;
 import org.malamber.voice.views.GridOverlay;
 
 import android.graphics.Point;
@@ -16,7 +16,6 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.Window;
-import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 

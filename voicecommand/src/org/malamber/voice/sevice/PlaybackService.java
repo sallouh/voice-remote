@@ -3,7 +3,7 @@
  * http://www.malamber.org/android
  */
 
-package org.malamber.voice.Service;
+package org.malamber.voice.sevice;
 import org.malamber.voice.aidl.IMediaPlaybackService;
 
 import android.os.RemoteException;

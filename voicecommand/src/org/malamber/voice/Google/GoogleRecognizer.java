@@ -1,8 +1,8 @@
-package org.malamber.voice.Google;
+package org.malamber.voice.google;
 
 import org.malamber.logging.L;
 import org.malamber.voice.VoiceCommand;
-import org.malamber.voice.Service.VoiceCommandService;
+import org.malamber.voice.sevice.VoiceCommandService;
 
 import android.content.Context;
 import android.content.Intent;

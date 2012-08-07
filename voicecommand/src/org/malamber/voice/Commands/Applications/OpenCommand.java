@@ -1,4 +1,4 @@
-package org.malamber.voice.Commands.Applications;
+package org.malamber.voice.commands.Applications;
 
 import org.malamber.logging.L;
 import org.malamber.voice.commands.Command;

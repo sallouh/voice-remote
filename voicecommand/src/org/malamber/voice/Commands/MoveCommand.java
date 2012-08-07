@@ -1,7 +1,7 @@
-package org.malamber.voice.Commands;
+package org.malamber.voice.commands;
 
 import org.malamber.logging.L;
-import org.malamber.voice.SendEvents.KeyCode;
+import org.malamber.voice.events.KeyCode;
 
 import android.content.Context;
 

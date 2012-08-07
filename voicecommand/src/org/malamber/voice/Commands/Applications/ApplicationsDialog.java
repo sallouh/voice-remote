@@ -1,4 +1,4 @@
-package org.malamber.voice.Commands.Applications;
+package org.malamber.voice.commands.Applications;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -3,7 +3,7 @@
  * http://www.malamber.org/android
  */
 
-package org.malamber.voice.Service;
+package org.malamber.voice.sevice;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

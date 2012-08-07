@@ -1,4 +1,4 @@
-package org.malamber.voice.Data;
+package org.malamber.voice.data;
 
 import java.util.ArrayList;
 

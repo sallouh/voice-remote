@@ -1,4 +1,4 @@
-package org.malamber.voice.Crash;
+package org.malamber.voice.crash;
 
 import android.content.Context;
 import android.content.Intent;

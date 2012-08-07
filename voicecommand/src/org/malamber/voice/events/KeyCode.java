@@ -1,4 +1,4 @@
-package org.malamber.voice.SendEvents;
+package org.malamber.voice.events;
 
 import java.util.ArrayList;
 import java.util.List;

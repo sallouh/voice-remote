@@ -1,4 +1,4 @@
-package org.malamber.voice.Service;
+package org.malamber.voice.sevice;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,13 +13,13 @@ import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
 import org.malamber.voice.VoiceCommandApplication;
-import org.malamber.voice.Google.GoogleRecognizer;
 import org.malamber.voice.activities.SpeechResultDialog;
 import org.malamber.voice.aidl.IVoiceCommandService;
 import org.malamber.voice.aidl.SpeechResultsListener;
 import org.malamber.voice.commands.Command;
 import org.malamber.voice.commands.VoicePattern;
 import org.malamber.voice.commands.VoicePatternRunnable;
+import org.malamber.voice.google.GoogleRecognizer;
 
 import android.app.PendingIntent;
 import android.app.Service;

@@ -1,4 +1,4 @@
-package org.malamber.voice.Database;
+package org.malamber.voice.database;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

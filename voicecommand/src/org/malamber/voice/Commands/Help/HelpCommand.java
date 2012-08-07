@@ -1,4 +1,4 @@
-package org.malamber.voice.Commands.Help;
+package org.malamber.voice.commands.Help;
 
 import org.malamber.voice.commands.Command;
 import org.malamber.voice.commands.VoicePatternRunnable;

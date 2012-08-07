@@ -1,9 +1,10 @@
-package org.malamber.voice.Commands.Touch;
+package org.malamber.voice.commands.Touch;
 
 import org.malamber.logging.L;
 import org.malamber.voice.VoiceCommand;
 import org.malamber.voice.commands.Command;
 import org.malamber.voice.commands.VoicePatternRunnable;
+import org.malamber.voice.views.GridOverlay;
 
 import android.content.Context;
 import android.content.Intent;

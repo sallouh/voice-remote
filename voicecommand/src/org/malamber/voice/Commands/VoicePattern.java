@@ -1,4 +1,4 @@
-package org.malamber.voice.Commands;
+package org.malamber.voice.commands;
 
 import java.util.regex.Pattern;
 
