@@ -3,8 +3,8 @@ package org.malamber.voice.SendEvents;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.malamber.common.Log.L;
 import org.malamber.common.shell.ShellExecutor;
+import org.malamber.logging.L;
 
 
 public class SendText {

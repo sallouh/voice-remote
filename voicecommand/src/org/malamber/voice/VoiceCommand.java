@@ -2,10 +2,10 @@ package org.malamber.voice;
 
 import java.util.Hashtable;
 
-import org.malamber.common.Log.L;
-import org.malamber.voice.Activities.VoiceCommandActivity;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.logging.L;
 import org.malamber.voice.Service.VoiceCommandService;
+import org.malamber.voice.activities.VoiceCommandActivity;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.app.Notification;
 import android.app.NotificationManager;

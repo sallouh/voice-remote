@@ -1,9 +1,9 @@
 package org.malamber.voice.Commands.Touch;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.VoiceCommand;
-import org.malamber.voice.Commands.Command;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.voice.commands.Command;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.content.Context;
 import android.content.Intent;

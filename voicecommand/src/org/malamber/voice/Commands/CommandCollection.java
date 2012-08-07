@@ -3,7 +3,7 @@ package org.malamber.voice.Commands;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.Commands.Applications.OpenCommand;
 import org.malamber.voice.Commands.Touch.TouchCommand;
 

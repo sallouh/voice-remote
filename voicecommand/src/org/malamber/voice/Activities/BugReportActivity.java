@@ -1,6 +1,6 @@
-package org.malamber.voice.Activities;
+package org.malamber.voice.activities;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 
 import android.app.Activity;

@@ -1,8 +1,8 @@
 package org.malamber.voice.Commands.Applications;
 
-import org.malamber.common.Log.L;
-import org.malamber.voice.Commands.Command;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.logging.L;
+import org.malamber.voice.commands.Command;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.content.Context;
 import android.content.Intent;

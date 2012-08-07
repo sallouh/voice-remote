@@ -1,4 +1,4 @@
-package org.malamber.voice.Activities;
+package org.malamber.voice.activities;
 
 import org.malamber.voice.R;
 

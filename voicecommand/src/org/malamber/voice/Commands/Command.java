@@ -2,7 +2,7 @@ package org.malamber.voice.Commands;
 
 import java.util.Hashtable;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.VoiceCommand;
 
 import android.content.Context;

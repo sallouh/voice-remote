@@ -1,7 +1,7 @@
 package org.malamber.voice.Commands.Help;
 
-import org.malamber.voice.Commands.Command;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.voice.commands.Command;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.content.Context;
 

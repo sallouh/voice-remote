@@ -1,6 +1,6 @@
 package org.malamber.voice.Service;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

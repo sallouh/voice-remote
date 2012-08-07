@@ -2,11 +2,11 @@ package org.malamber.voice;
 
 import java.util.ArrayList;
 
-import org.malamber.common.Log.L;
-import org.malamber.voice.Commands.Command;
-import org.malamber.voice.Commands.CommandCollection;
-import org.malamber.voice.Commands.VoicePattern;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.logging.L;
+import org.malamber.voice.commands.Command;
+import org.malamber.voice.commands.CommandCollection;
+import org.malamber.voice.commands.VoicePattern;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.app.Application;
 import android.content.Context;

@@ -2,7 +2,7 @@ package org.malamber.voice.Commands;
 
 import java.util.regex.Pattern;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 
 public class VoicePattern {
 	public VoicePattern(String p, VoicePatternRunnable r)

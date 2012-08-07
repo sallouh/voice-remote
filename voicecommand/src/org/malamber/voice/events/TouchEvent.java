@@ -3,8 +3,8 @@ package org.malamber.voice.SendEvents;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.malamber.common.Log.L;
 import org.malamber.common.shell.ShellExecutor;
+import org.malamber.logging.L;
 
 import android.graphics.Point;
 
@@ -30,7 +30,7 @@ public class TouchEvent {
 			sendEvent(dev, 3, 54, y);
 			touch(false);
 		} catch (InterruptedException e) {
-			L.ex("SendLongTouch", e.getMessage());
+			L.ex("TouchEvent","SendLongTouch", e);
 		}
 
 	}

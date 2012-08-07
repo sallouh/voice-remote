@@ -1,8 +1,8 @@
-package org.malamber.voice.Activities;
+package org.malamber.voice.activities;
 
 import java.util.ArrayList;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
 
@@ -64,7 +64,7 @@ public class OptionsActivity extends Activity {
 
 			startActivityForResult(intent, VOICE_RECOGNITION_REQUEST_CODE);
 		} catch (Exception e) {
-			L.ex(this, e.getMessage());
+			L.ex(this, "",e);
 		}
 	}
 

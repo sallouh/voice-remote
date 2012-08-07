@@ -2,7 +2,7 @@ package org.malamber.voice.views;
 
 import java.util.ArrayList;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 
 import android.content.Context;
@@ -15,18 +15,18 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.view.View;
 
-public class GridView extends View{
+public class GridOverlay extends View{
 
 	private Rect 		rect;	
 	private int  		columns;
-	private ArrayList<GridView>
-						grids = new ArrayList< GridView>();	
+	private ArrayList<GridOverlay>
+						grids = new ArrayList< GridOverlay>();	
 
 	private Paint		p = new Paint(Paint.ANTI_ALIAS_FLAG);
 	private int 		color = Color.YELLOW;	
 	private int 		touchIndex = -1;
 	
-	public GridView(Context c, Rect r, int col) {
+	public GridOverlay(Context c, Rect r, int col) {
 		super(c);
 		rect = r;
 		columns = col;
@@ -36,7 +36,7 @@ public class GridView extends View{
 		
 		init();
 	}
-	public GridView(Context c, Rect r, int col, int lcolor) {
+	public GridOverlay(Context c, Rect r, int col, int lcolor) {
 		super(c);
 		rect = r;
 		columns = col;
@@ -76,9 +76,9 @@ public class GridView extends View{
 		this.invalidate();
 	}
 	
-	public GridView getSubGridView(int i)
+	public GridOverlay getSubGridView(int i)
 	{		
-		GridView gv = null;
+		GridOverlay gv = null;
 		
 		if(i>=0 && i < grids.size()){
 			gv= grids.get(i - 1);
@@ -127,7 +127,7 @@ public class GridView extends View{
 				
 				
 				//L.i(this, "GridView("+i+") = left="+r.left+" top="+r.top+ " width="+r.width()+" height=" + r.height());
-				GridView gv = new GridView(getContext(), r, 2, Color.YELLOW);
+				GridOverlay gv = new GridOverlay(getContext(), r, 2, Color.YELLOW);
 				
 				grids.add(gv);
 			}
@@ -152,7 +152,7 @@ public class GridView extends View{
 			p.setTypeface(Typeface.DEFAULT_BOLD);
 			for (int i = 0; i < grids.size(); i++)//GridView gv : grids)
 			{
-				GridView gv = grids.get(i);
+				GridOverlay gv = grids.get(i);
 				Rect rr = gv.getRect();
 				canvas.drawText("" +( i + 1), rr.centerX() - 4, rr.centerY() + 4, p);
 

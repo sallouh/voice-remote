@@ -3,25 +3,26 @@ package org.malamber.voice.Commands.Touch;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
-import org.malamber.voice.Activities.BaseVoiceActivity;
-import org.malamber.voice.Commands.VoicePatternRunnable;
 import org.malamber.voice.SendEvents.TouchEvent;
-import org.malamber.voice.views.GridView;
+import org.malamber.voice.activities.BaseVoiceActivity;
+import org.malamber.voice.commands.VoicePatternRunnable;
+import org.malamber.voice.views.GridOverlay;
 
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.Window;
+import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 
-public class GridOverlay extends BaseVoiceActivity 
+public class GridOverlayActivity extends BaseVoiceActivity 
 {
-	GridView grid;	
+	GridOverlay grid;	
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -107,7 +108,7 @@ public class GridOverlay extends BaseVoiceActivity
 				int Height = display.getHeight();				
 				
 				r.set(0, 0,Width,Height);
-				grid = new GridView(this, r, 3 );	
+				grid = new GridOverlay(this, r, 3 );	
 				grid.initGrids();
 				
 				if(g1 >= 0)
@@ -136,7 +137,7 @@ public class GridOverlay extends BaseVoiceActivity
 	}	
 
 	
-	void addView(GridView g, Rect r, int index)
+	void addView(GridOverlay grid2, Rect r, int index)
 	{	
 		L.d(this, "addView "+index);
 		try
@@ -149,7 +150,7 @@ public class GridOverlay extends BaseVoiceActivity
 			int Height = display.getHeight();
 			LayoutParams params = new LayoutParams(Width,Height );
 			
-			layout.addView(g, params);
+			layout.addView(grid2, params);
 		}
 		catch (Exception e)
 		{

@@ -1,6 +1,6 @@
 package org.malamber.voice.Commands;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.Service.VoiceCommandService;
 import org.malamber.voice.aidl.IMediaPlaybackService;
 

@@ -1,14 +1,15 @@
-package org.malamber.voice.Activities;
+package org.malamber.voice.activities;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -23,7 +24,7 @@ public class VoiceCommandActivity extends BaseVoiceActivity
 	Context context;
 	ProgressBar pb;
 	TextView tv;
-	
+	MediaPlayer mp;
 	@Override	
 	public void onCreate(Bundle savedInstanceState)
 	{
@@ -34,6 +35,7 @@ public class VoiceCommandActivity extends BaseVoiceActivity
 		L.Tag = "voice";
 		
 		context=this;
+		mp=new MediaPlayer();
 		
 		
 		try {

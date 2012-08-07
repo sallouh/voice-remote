@@ -1,9 +1,9 @@
 package org.malamber.voice.Commands.Help;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
-import org.malamber.voice.Activities.BaseVoiceActivity;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.voice.activities.BaseVoiceActivity;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.os.Bundle;
 import android.view.Window;

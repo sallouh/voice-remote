@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -81,7 +81,7 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 			
 		} catch (Exception e) {
 			// 
-			L.ex(this, e.getMessage());
+			L.ex(this, "",e);
 		}
     	return ar;
     }
@@ -144,7 +144,7 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 			myInput.close();
 		} catch (Exception e) {
 			
-			L.ex(this,e.getMessage());
+			L.ex(this, "",e);
 		} 
     }
     public static void backupDB()
@@ -171,7 +171,7 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 			myInput.close();
 		} catch (Exception e) {
 			
-			//L.ex(this,e.getMessage());
+			//L.ex(this, "",e);
 		} 
     }
     
@@ -211,14 +211,14 @@ public class DataBaseHelper extends SQLiteOpenHelper{
         	db.createDataBase();
  
 	 	} catch (IOException ioe) {	 
-	 		L.ex(c, "Unable to create database");	 
+	 		L.ex(c, "Unable to create database",ioe);	 
 	 	}
 	 
 	 	try {	 
 	 		db.openDataBase();
 	 
 	 	}catch(SQLException sqle){
-	 		L.ex(c,"SQLException"+sqle.getMessage() );	
+	 		L.ex(c,"SQLException",sqle);	
 	 	}
 	 	
 	 	return db;

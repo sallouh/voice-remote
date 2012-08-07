@@ -1,9 +1,9 @@
-package org.malamber.voice.Activities;
+package org.malamber.voice.activities;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
 

@@ -5,11 +5,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.malamber.common.Log.L;
+import org.malamber.logging.L;
 import org.malamber.voice.R;
 import org.malamber.voice.VoiceCommand;
-import org.malamber.voice.Activities.BaseVoiceActivity;
-import org.malamber.voice.Commands.VoicePatternRunnable;
+import org.malamber.voice.activities.BaseVoiceActivity;
+import org.malamber.voice.commands.VoicePatternRunnable;
 
 import android.content.Context;
 import android.content.Intent;
