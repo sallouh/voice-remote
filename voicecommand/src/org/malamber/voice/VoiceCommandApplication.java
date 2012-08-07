@@ -17,10 +17,6 @@ public class VoiceCommandApplication extends Application
 	CommandCollection cc;
 	private ArrayList<VoicePattern> servicePatterns = new ArrayList<VoicePattern>();    
 	
-	//static {
-    //    System.loadLibrary("jniLib");
-    //}
-	//public native String  stringFromJNI();
 	
 	public VoiceCommandApplication()
 	{

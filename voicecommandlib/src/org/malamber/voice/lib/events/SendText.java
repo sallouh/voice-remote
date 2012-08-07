@@ -1,4 +1,4 @@
-package org.malamber.voice.lib.sendevents;
+package org.malamber.voice.lib.events;
 
 import java.util.ArrayList;
 import java.util.List;

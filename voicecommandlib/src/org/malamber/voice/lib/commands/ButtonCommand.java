@@ -1,6 +1,6 @@
 package org.malamber.voice.lib.commands;
 
-import org.malamber.voice.lib.sendevents.KeyCode;
+import org.malamber.voice.lib.events.KeyCode;
 
 import android.content.Context;
 
